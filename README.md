@@ -90,11 +90,11 @@ For the `subql-starter` project, you can try to query with the following code to
 ````graphql
 {
   query{
-    starterEntities(first:10){
+    sumRewards(first: 3 orderBy: BLOCKHEIGHT_ASC){
       nodes{
-        field1,
-        field2,
-        field3
+        id
+        blockheight
+        totalReward
       }
     }
   }
